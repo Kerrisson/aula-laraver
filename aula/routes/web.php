@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', ['uses'=>'Controller@homepage']);
+Route::get('/cadastro', ['uses'=>'Controller@cadastro']);
+Route::get('/fazerLogin', ['uses'=>'Controller@fazerLogin']);
+
+
+
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
